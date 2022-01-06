@@ -1,26 +1,25 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+*__pycache__
+*.pyc
+*.csv
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+*.log
+*.xlsx
+*.pdf
+*.json
+*.DS_Store
+*.sqlite3
 
-# testing
-/coverage
+.env
+.htaccess
+.pre-commit-config.yaml
 
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-node_modules
-node_modules
-node_modules
+.idea/*
+media/*
+venv/*
+!/deploy/sql
+!/docker-compose.yml
+#00*.py
+prod.py
+credential.cnf
+mysqlclient-2.0.3-cp39-cp39-win_amd64.whl
+static/media/
