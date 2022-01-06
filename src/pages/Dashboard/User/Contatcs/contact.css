@@ -1,0 +1,9 @@
+.contact-wrapper .actions {
+    opacity: 0;
+    transition: .2s all ease-in;
+}
+
+.contact-wrapper:hover .actions {
+    opacity: 1;
+    transition: .6s all ease-out;
+}

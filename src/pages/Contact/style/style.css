@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+.contact-input {
+    @apply border border-gray-300 bg-gray-100 rounded p-4
+}
+
+.contact-input:focus {
+    @apply ring-2 ring-blue-700 outline-none border-transparent
+}
+
+@tailwind base;

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+
+
+
+.hero-wrapper {
+    @apply h-80 bg-black text-white flex flex-col place-items-center place-content-center;
+}
+
+.hero-content {
+    @apply flex flex-col space-y-3 text-center place-items-center place-content-center;
+}
+
+.trial-btn {
+    @apply p-4 bg-gray-700 rounded font-bold;
+}
+
+.trial-btn:hover {
+    @apply bg-gray-800;
+}
+
+.login-btn {
+    @apply bg-blue-500 p-4 rounded font-bold;
+}
+
+a .login-btn:hover {
+    @apply text-white;
+}
+
+.login-btn:hover,
+.get-started-btn:hover {
+    @apply bg-blue-600;
+}
+
+.get-started-btn {
+    @apply bg-blue-500 rounded text-white w-32 p-4;
+}
+
+.signup-btn {
+    @apply p-4 text-white bg-black w-32 font-bold;
+}
+
+.signup-btn:hover {
+    @apply bg-gray-700;
+}
+
+.pricing-table-wrapper {
+    /* @apply flex flex-row flex-wrap space-x-6 text-center; */
+}
+
+.pricing-table {
+    /* @apply shadow-md rounded w-full bg-white flex flex-col; */
+}
+
+.pricing-heading {
+    /* @apply items-center bg-black text-white flex flex-col py-5; */
+}
+
+@screen sm {}
+
+@screen lg {
+    .pricing-table-wrapper {
+        /* @apply flex-nowrap space-y-0 space-x-10; */
+    }
+}
+
+@tailwind utilities;

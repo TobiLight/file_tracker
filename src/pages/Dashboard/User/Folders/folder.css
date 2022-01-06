@@ -1,0 +1,33 @@
+.folder-wrapper .actions {
+    opacity: 0;
+    transition: .2s all ease-in;
+}
+
+.folder-wrapper:hover .actions {
+    opacity: 1;
+    transition: .6s all ease-out;
+}
+
+.folders-body::-webkit-scrollbar {
+    width: 10px;
+}
+
+.folders-body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.folders-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    background-color: rgba(59, 130, 246, 0.5);
+}
+
+
+@media only screen and (max-width: 640px) {
+    .folders-body {
+        max-height: 430px;
+        overflow-y: auto;
+        padding-bottom: 10px;
+    }
+}

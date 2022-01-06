@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+
+
+.isActive {
+    @apply text-blue-500 bg-blue-100 rounded p-3;
+    transition: background 0.3s, padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+.header {
+    @apply py-4 px-8 flex justify-between bg-white text-blue-500;
+}
+
+.logo-wrapper {
+    @apply flex place-items-center w-full;
+}
+
+.search-bar-wrapper {
+    @apply flex justify-end w-full relative;
+}
+
+.search-bar-input {
+    @apply w-full border border-gray-300 shadow rounded p-3 text-black;
+}
+
+.search-bar-input:focus {
+    @apply ring-2 ring-blue-700 outline-none border-transparent shadow-none;
+}
+
+@screen lg {
+    .search-bar-wrapper {
+        @apply mb-5
+    }
+}
+
+@tailwind utilities;
